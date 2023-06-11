@@ -8,7 +8,7 @@ function Log() {
     e.preventDefault();
 
     // Send email and password data to backend API for authentication
-    fetch('/api/login', {
+    fetch('http://localhost:5002/api/login', {
       method: 'POST',
       body: JSON.stringify({ email, password }),
       headers: {
